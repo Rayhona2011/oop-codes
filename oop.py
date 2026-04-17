@@ -1085,11 +1085,11 @@
 
 
 
-from db import db_connect
-conn = db_connect()
+# from db import db_connect
+# conn = db_connect()
 
-cur = conn.cursor()
-conn.autocommit = True
+# cur = conn.cursor()
+# conn.autocommit = True
 
 # cur.execute(
 #     """CREATE TABLE students(
@@ -1136,3 +1136,4 @@ conn.autocommit = True
 # for row in rows:
 #     print(row)
 # print("Ma'lumot qo'shildi")    
+
