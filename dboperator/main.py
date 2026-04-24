@@ -1,7 +1,7 @@
-from db import db_connect
-conn=db_connect()
-cur=conn.cursor()
-conn.autocommit=True
+# from db import db_connect
+# conn=db_connect()
+# cur=conn.cursor()
+# conn.autocommit=True
 
 # cur.execute(
 #     "CREATE DATABASE students"
@@ -22,9 +22,10 @@ conn.autocommit=True
 # )
 # print("Ma'lumot qo'shildi")
 
-cur.execute(
-    "SELECT * FROM students WHERE name ILIKE 'R%'"
-)
-rows = cur.fetchall()
-for row in rows:
-    print(row)
+# cur.execute(
+#     "SELECT * FROM students WHERE ORDER BY score DESC"
+# )
+# rows = cur.fetchall()
+# for row in rows:
+#     print(row)
+
