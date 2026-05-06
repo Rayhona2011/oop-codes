@@ -1,0 +1,28 @@
+
+.a{
+    font-family: cursive;
+    font-size: 160%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rasm{
+   
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.p{
+    font-family: cursive;
+    font-size: 160%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ol{
+    font-family: cursive;
+    font-size: 160%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

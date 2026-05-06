@@ -1,81 +1,143 @@
-# from telgram import Update
-# from telegram.ext import{
-#     ApplicationBuilder ,
-#     CommandHandler ,
-#     MessageHandler ,
-#     ContextTypes , 
-#     ConversationHandler ,
-#     filters
+# son =1
+# son2 =2.5
+# matn ="salom"
+# matn2 =True
+# print(type(son) , type(son2) , type(matn) , type(matn2))
+
+# dictionary
+
+# words = {
+#     "book": "kitob",
+#     "pen": "ruchka",
+#     "computer": "kompyuter",
+#     "phone": "telefon",
+#     "table": "stol",
+#     "chair": "stul",
+#     "school": "maktab",
+#     "teacher": "o‘qituvchi",
+#     "student": "o‘quvchi",
+#     "water": "suv"
 # }
 
-# TOKEN = ""
-
-# ASK_NAME = 1
-
-# async def start(update: Update , context: ContextTypes.DEFULT_TYPE):
-#     await update.message.reply_text("Assalomu alaykum\n\nIsmingizni kiriting:")
-#     return ASK_NAME
-
-# async def get_name(update: Update , context: ContextTypes.DEFULT_TYPE):
-#     name =update.message.text
-#     context.user_data["name"] = name
-
-#     await update.message.reply_text(
-#         f"Xush kelibsiz , {name}! "
-#     )
-#     return ConversationHandler.END
-
-# conv_handler = ConversationHandler(
-#     entery_points=[CommandHandler("start" , start )],
-#     states={
-#         ASK_NAME: [MessageHandler(filters.TEXT & ~filters.COMMAND , get_name)]
-#     }
-#     fallbacks =[]
-# )
-
-# app =ApplicationBuilder(.token(TOKEN).build())
-# app.add_handler(conv_handler)
-
-# print("Bot ishga tushdi ...")
- 
+# soz =input("So'z kiriting:")
+# print(words.get(soz , "Bunday so'z mavjud emas"))
 
 
 
+# def salom_ber(ism):
+#     return(f"Assalomu alaykum {ism}")
+
+# print(salom_ber("Rayhona"))
+# print(salom_ber("Ziyoda"))
+# print(salom_ber("Sevinchoy"))
 
 
-# from telegram import Update , InlineKeyboardButton , InlineKeyboardMarkup
-# from telegram.ext import ApplicationBuilder , CommandHandler , ContextTypes , CallbackQueryHandler
+# def son_qosh(a,b):
+#     print(a+b)
 
-# TOKEN =""
+# son_qosh(10,20)
 
-# async def start(update: Update , context: ContextTypes.DEFAULT_TYPE):
-#     keyboard =[
-#         [
-#         InlineKeyboardButton("Ha" , callback_data="ha"),
-#         InlineKeyboardButton("Yo'q" , callback_data="yo'q")
-#         ]
-#     ]
+
+
+# # 1
+# def kvadratini_chiqar(son):
+#     print(kvadratini_chiqar(son**2))
+
+# kvadratini_chiqar(4)
+
+# # 2
+# def kubni_chiqar(a):
+#     print(kvadratini_chiqar(a**3))
+
+# kubni_chiqar(2)    
+
+# 3
+# import math
+# def faktorial_hisobla(a):
+#     return(math.factorial(a))
+# faktorial_hisobla(5)
     
-#     markup =InlineKeyboardMarkup(keyboard)
-
-#     await update.message.reply_text(
-#         "Tanlang:",
-#         reply_markup=markup
-#     )
-
-# async def button(update: Update , context: ContextTypes.DEFAULT_TYPE):
-#     query = update.callback_query
-#     await query.answer()
-
-#     if query.data == "ha":
-#         await query.edit_message_text("Siz HA ni bosdingiz")
-
+# 4
+# def juft_top(a):
+#      if a/2 == 0:
+#         return "juft"
 #     else:
-#         await query.edit_message_text("Siz YO'Q ni bosdingiz")
+#         print("toq")
 
-# app = ApplicationBuilder().token(TOKEN).build()
+# 5
+# def ildizini_top(a):
+#     print(ildizini_top(a**(1/2)))
+# ildizini_top(9)  
 
-# app.add_handler(CommandHandler("start" , start))
-# app.add_handler(CallbackQueryHandler(button))
+# 6
+# def hisobla(sonlar):
+#     return(sum(sonlar))
 
-# app.run_polling()
+# print(hisobla([10, 20 , 30]))
+
+# 7
+# def qiymat_top(a,b):
+#     return((a+b)/2)
+
+# 8
+# def hisobla(sonlar):
+#     return(sum(sonlar))
+
+# print(hisobla([15, 25 , 35]))
+
+# 9
+# def hisobla(sonlar):
+#     return(max(sonlar))
+
+# print(hisobla([40, 50 , 60]))
+
+# 10
+# def hisobla(sonlar):
+#     return(min(sonlar))
+
+# print(hisobla([45, 55 , 65]))
+
+# 11
+# def hisobla(matn):
+#     bolaklash=matn.split()
+#     return(len(bolaklash))
+# print(hisobla("Men dasturchiman"))
+
+# 12
+# def hisobla(matn):
+#     return len(matn)
+# print(hisobla("Salom"))
+
+# 13
+# def soz_top(matn):
+#     bolaklash=matn.split()
+#     return max(bolaklash  , key=len)
+# print(soz_top("Salom mening ismim Rayhona"))
+
+# 14
+# def teskari_qil(matn):
+#     return matn[::-1]
+
+# print(teskari_qil("Assalomu alaykum"))
+
+# 15
+# def hisobla(son):
+#     qoshish =sum(son)
+#     return qoshish / len(son)
+
+# print(hisobla([10 ,20]))
+
+# 16
+
+# 17
+
+
+# 18
+# def son_top(sonlar):
+#     juft =[]
+#     for i in sonlar:
+#         if i % 2 == 0:
+#          juft.append(i)
+#     return juft
+# print(son_top([23 , 65 , 76 , 78]))
+    
